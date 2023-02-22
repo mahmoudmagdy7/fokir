@@ -1,0 +1,161 @@
+/* small laptops */
+
+@media screen and (max-width: 1025px) {
+  /* html {
+    font-size: 0.8rem;
+  } */
+  .container {
+    max-width: 100%;
+  }
+  .col__img {
+    border-radius: 8px;
+    /* width: 90%; */
+  }
+  .about_section .col-2-3 {
+    float: right;
+    width: 60%;
+    padding: 60px;
+  }
+  .about_section .col-2-3 li {
+    font-size: 14px;
+  }
+  .about_section .col-1-3 {
+    top: 50px;
+    left: -80px;
+    width: 40%;
+  }
+}
+
+/* --------------- taplets ----------------------- */
+
+@media screen and (max-width: 769px) {
+  body {
+    overflow: hidden;
+  }
+  .header {
+    background-position-x: center;
+  }
+  .closed-menu {
+    font-size: 2.6rem;
+    color: #fff;
+    position: absolute;
+    right: 30px;
+  }
+
+  .nav_bar__menu {
+    transition: 1s;
+    height: 0;
+    overflow: hidden;
+    float: none;
+    background-color: var(--dark-gray);
+    margin-top: 4rem;
+    position: relative; /* to make z-index work*/
+    z-index: 222;
+  }
+  .closed-menu:hover ~ .nav_bar__menu {
+    height: 33rem;
+  }
+
+  .nav_bar__menu a {
+    display: block;
+    padding: 0.5rem 7rem;
+  }
+  .Services .col-1-4 {
+    width: 50%;
+  }
+  .about_section .col-1-3 {
+    float: none;
+    top: unset;
+    left: unset;
+    width: 46%;
+  }
+  .about_section .col-2-3 {
+    float: none;
+  }
+  .about .container {
+    max-width: 150%;
+  }
+  .Services .col-1-4 {
+    width: 50%;
+  }
+  .portfolio .item-container {
+    width: 50%;
+  }
+  .feedback {
+    padding: 100px 0;
+  }
+  .feedback .member {
+    width: 90%;
+  }
+}
+
+/* --------------- mobile ----------------------- */
+
+@media screen and (max-width: 425px) {
+  .header__heading {
+    top: 45%;
+    left: calc(50% - 120px);
+  }
+  .main__heading {
+    font-size: 4rem;
+  }
+  .description__heading {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .img {
+    position: static;
+  }
+  .about_section .col-1-3::before {
+    display: none;
+  }
+  .transition {
+    width: 36rem;
+    bottom: 19px;
+  }
+  .img:hover .transition {
+    height: 44rem;
+    opacity: 1;
+  }
+  .about_section .col-2-3 {
+    float: none;
+    width: 64%;
+    padding: 2rem;
+  }
+  .Services .col-1-4 {
+    width: 100%;
+  }
+
+  .portfolio .item-container {
+    width: 100%;
+  }
+  .info-item {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .feedback .member .content {
+    margin-left: 0;
+  }
+  .feedback .member img {
+    float: none;
+  }
+  .blog-cards .card-container {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .blog-cards .card {
+    width: 100%;
+  }
+  .contact-us .form {
+    width: 95%;
+  }
+  footer {
+    padding: 50px 0;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+}
